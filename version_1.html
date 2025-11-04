@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><!-- Startup Name -->Your Startup — Continuous ML Penetration Testing</title>
+  <meta name="description" content="Machine‑learned, continuous penetration testing: autonomous scanning, prioritised risk insights, and developer‑first remediation." />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (optional tweaks)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1', // Indigo-500
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Simple fade-in */
+    .fade { opacity: 0; transform: translateY(8px); transition: opacity .6s ease, transform .6s ease; }
+    .fade.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="antialiased text-slate-900 bg-slate-50">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <!-- LOGO PLACEHOLDER -->
+          <div class="w-9 h-9 rounded-xl bg-primary-500/10 grid place-items-center">
+            <!-- Replace with your SVG/logo -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-primary-600"><path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" stroke-width="1.5"/><path d="M12 8l7-4" stroke-width="1.5"/></svg>
+          </div>
+          <span class="font-semibold tracking-tight text-lg" id="brandName">Your Startup</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#how" class="hover:text-primary-600">How it works</a>
+          <a href="#features" class="hover:text-primary-600">Features</a>
+          <a href="#pricing" class="hover:text-primary-600">Pricing</a>
+          <a href="#faq" class="hover:text-primary-600">FAQ</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-block text-sm font-medium px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100">Contact</a>
+          <a href="#demo" class="inline-block text-sm font-semibold px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-sm">Book a demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-500/10 text-primary-700 text-xs font-medium mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-600"></span>
+            Machine‑learned continuous penetration testing
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+            Secure continuously. <span class="text-primary-600">Ship fearlessly</span>.
+          </h1>
+          <p class="mt-5 text-lg text-slate-600 max-w-xl">
+            <span class="font-semibold" data-company>YOUR STARTUP</span> uses adaptive ML agents to probe your apps 24/7, learn from findings, and prioritise exploitable risk—so your team fixes what matters first.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#demo" class="px-5 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700 shadow">Get a live demo</a>
+            <a href="#how" class="px-5 py-3 rounded-xl border border-slate-300 font-medium hover:bg-slate-100">See how it works</a>
+          </div>
+          <div class="mt-6 text-sm text-slate-500">
+            Placeholder for trust badges & logos — add your customer or partner logos here.
+          </div>
+        </div>
+        <div class="relative">
+          <!-- Illustration / hero graphic placeholder -->
+          <div class="aspect-[4/3] rounded-2xl bg-white border border-slate-200 shadow-sm p-6 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                <span class="text-xs text-slate-500">Agent-01</span>
+              </div>
+              <span class="text-xs text-slate-400">active • 24/7</span>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="rounded-xl border border-slate-200 p-4">
+                <p class="text-xs text-slate-500">Coverage</p>
+                <p class="text-2xl font-semibold">98.6%</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <p class="text-xs text-slate-500">Exploitable</p>
+                <p class="text-2xl font-semibold text-amber-600">7</p>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <p class="text-xs text-slate-500">MTTR</p>
+                <p class="text-2xl font-semibold">↓42%</p>
+              </div>
+            </div>
+            <div class="rounded-xl border border-slate-200 p-4">
+              <p class="text-xs text-slate-500 mb-1">Live finding</p>
+              <p class="text-sm">GraphQL introspection enabled on <span class="font-mono">/v1/graphql</span>. Suggested fix & auto‑PR ready.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">How it works</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">Autonomous agents continuously explore your attack surface, learn from real signals, and integrate directly into your developer workflow.</p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm fade">
+          <div class="w-10 h-10 rounded-xl bg-primary-500/10 grid place-items-center mb-4">
+            <span class="font-bold text-primary-600">1</span>
+          </div>
+          <h3 class="font-semibold text-lg">Map & discover</h3>
+          <p class="mt-2 text-slate-600">Connect repos, cloud, and URLs. Agents enumerate endpoints, inputs, and auth flows to build a living threat model.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm fade">
+          <div class="w-10 h-10 rounded-xl bg-primary-500/10 grid place-items-center mb-4">
+            <span class="font-bold text-primary-600">2</span>
+          </div>
+          <h3 class="font-semibold text-lg">Probe & learn</h3>
+          <p class="mt-2 text-slate-600">ML policies adapt fuzzing and exploit strategies, prioritising findings with real‑world exploitability signals.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm fade">
+          <div class="w-10 h-10 rounded-xl bg-primary-500/10 grid place-items-center mb-4">
+            <span class="font-bold text-primary-600">3</span>
+          </div>
+          <h3 class="font-semibold text-lg">Fix & verify</h3>
+          <p class="mt-2 text-slate-600">Auto‑generated patches and PRs, ticket sync, and regression checks ensure issues stay fixed as you ship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">Built for modern engineering teams</h2>
+          <p class="mt-4 text-slate-600">Security that keeps pace with CI/CD. Your devs get actionable insights, not noisy PDFs.</p>
+          <ul class="mt-6 space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="mt-1 w-2 h-2 rounded-full bg-primary-600"></div>
+              <div>
+                <p class="font-semibold">Agentic ML engine</p>
+                <p class="text-slate-600 text-sm">Reinforcement‑style policies adapt test depth and payloads from success signals.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="mt-1 w-2 h-2 rounded-full bg-primary-600"></div>
+              <div>
+                <p class="font-semibold">Exploitability scoring</p>
+                <p class="text-slate-600 text-sm">Ranks findings by realistic risk, asset criticality, and blast radius.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="mt-1 w-2 h-2 rounded-full bg-primary-600"></div>
+              <div>
+                <p class="font-semibold">Developer‑first workflow</p>
+                <p class="text-slate-600 text-sm">PR comments, Jira/GitHub sync, and one‑click remediation templates.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="mt-1 w-2 h-2 rounded-full bg-primary-600"></div>
+              <div>
+                <p class="font-semibold">Compliance ready</p>
+                <p class="text-slate-600 text-sm">Evidence exports for SOC 2 / ISO 27001 without manual screenshots.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <p class="text-xs text-slate-500">Integration placeholder</p>
+            <div class="mt-3 h-24 rounded-xl bg-white border border-slate-200 grid place-items-center">Add logo</div>
+            <p class="mt-3 text-sm text-slate-600">Connect your CI/CD: GitHub, GitLab, Jenkins.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <p class="text-xs text-slate-500">Integration placeholder</p>
+            <div class="mt-3 h-24 rounded-xl bg-white border border-slate-200 grid place-items-center">Add logo</div>
+            <p class="mt-3 text-sm text-slate-600">Cloud & runtime: AWS, Azure, GCP, K8s.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <p class="text-xs text-slate-500">Integration placeholder</p>
+            <div class="mt-3 h-24 rounded-xl bg-white border border-slate-200 grid place-items-center">Add logo</div>
+            <p class="mt-3 text-sm text-slate-600">Issue tracking: Jira, Linear, Asana.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+            <p class="text-xs text-slate-500">Integration placeholder</p>
+            <div class="mt-3 h-24 rounded-xl bg-white border border-slate-200 grid place-items-center">Add logo</div>
+            <p class="mt-3 text-sm text-slate-600">Alerting: Slack, Teams, Email.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof / quotes placeholder -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="rounded-2xl border border-slate-200 bg-white p-10 shadow-sm">
+        <p class="text-xl text-slate-700">
+          “<span data-company>YOUR STARTUP</span> reduced our MTTR by <span class="font-semibold">42%</span> and finally gave us signal instead of noise.”
+        </p>
+        <p class="mt-3 text-slate-500">— Add customer name & logo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 text-center">Simple, transparent pricing</h2>
+      <p class="mt-3 text-slate-600 text-center">Start small, scale securely. Replace with your pricing.</p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Starter -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 flex flex-col">
+          <h3 class="font-semibold">Starter</h3>
+          <p class="mt-1 text-sm text-slate-600">For side projects and PoCs</p>
+          <p class="mt-6 text-4xl font-extrabold">$99<span class="text-base font-medium text-slate-500">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-700">
+            <li>• 1 target, weekly scans</li>
+            <li>• Core ML agent</li>
+            <li>• Email alerts</li>
+          </ul>
+          <a href="#demo" class="mt-6 inline-block text-center px-4 py-2 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700">Try Starter</a>
+        </div>
+        <!-- Growth -->
+        <div class="rounded-2xl border-2 border-primary-600 p-6 bg-white shadow-sm -mt-2 md:-mt-6 flex flex-col">
+          <div class="inline-flex self-start px-2 py-1 text-xs rounded-full bg-primary-500/10 text-primary-700 font-medium">Most popular</div>
+          <h3 class="mt-2 font-semibold">Growth</h3>
+          <p class="mt-1 text-sm text-slate-600">For teams shipping weekly</p>
+          <p class="mt-6 text-4xl font-extrabold">$499<span class="text-base font-medium text-slate-500">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-700">
+            <li>• 5 targets, daily scans</li>
+            <li>• Advanced ML policies</li>
+            <li>• Slack + Jira integration</li>
+            <li>• Evidence exports</li>
+          </ul>
+          <a href="#demo" class="mt-6 inline-block text-center px-4 py-2 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700">Choose Growth</a>
+        </div>
+        <!-- Enterprise -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50 flex flex-col">
+          <h3 class="font-semibold">Enterprise</h3>
+          <p class="mt-1 text-sm text-slate-600">For regulated & at scale</p>
+          <p class="mt-6 text-4xl font-extrabold">Custom</p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-700">
+            <li>• Unlimited targets</li>
+            <li>• Private cloud/on‑prem</li>
+            <li>• SSO, SAML, SCIM</li>
+            <li>• Dedicated security SME</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-block text-center px-4 py-2 rounded-xl border border-slate-300 font-semibold hover:bg-slate-100">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo / Contact -->
+  <section id="demo" class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <h3 class="text-2xl font-bold">Book a demo</h3>
+        <p class="mt-2 text-slate-600">Tell us a little about your stack and we’ll tailor the walkthrough.</p>
+        <form id="demoForm" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="text-sm text-slate-600">Name</label>
+            <input required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Ada Lovelace" />
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Work email</label>
+            <input type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="ada@company.com" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm text-slate-600">Company</label>
+            <input class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Turing Labs" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="text-sm text-slate-600">What do you want to secure?</label>
+            <textarea rows="4" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Web app, APIs, mobile, GraphQL, cloud, containers…"></textarea>
+          </div>
+          <div class="md:col-span-2 flex items-center gap-2">
+            <input id="consent" type="checkbox" class="w-4 h-4 rounded border-slate-300" required />
+            <label for="consent" class="text-sm text-slate-600">I agree to be contacted about this request.</label>
+          </div>
+          <div class="md:col-span-2">
+            <button class="w-full md:w-auto px-5 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700" type="submit">Request demo</button>
+          </div>
+        </form>
+        <p id="formMsg" class="mt-4 text-sm text-green-700 hidden">Thanks! We’ll be in touch shortly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 text-center">Frequently asked questions</h2>
+      <div class="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+        <details class="group p-6 cursor-pointer">
+          <summary class="flex items-center justify-between text-slate-900 font-medium">
+            What makes this different from traditional pentesting?
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-600">Traditional pentests are point‑in‑time and static. Our agents run continuously and adapt their testing strategies based on live feedback.</p>
+        </details>
+        <details class="group p-6 cursor-pointer">
+          <summary class="flex items-center justify-between text-slate-900 font-medium">
+            Do you support on‑prem or private cloud?
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-600">Yes. An air‑gapped deployment model is available for regulated industries. Replace this copy with your policy.</p>
+        </details>
+        <details class="group p-6 cursor-pointer">
+          <summary class="flex items-center justify-between text-slate-900 font-medium">
+            How do you avoid false positives?
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-600">We combine exploit‑path validation, runtime signals, and human‑in‑the‑loop review for high‑confidence findings.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3">
+            <!-- FOOTER LOGO PLACEHOLDER -->
+            <div class="w-9 h-9 rounded-xl bg-primary-500/10 grid place-items-center">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-primary-600"><path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" stroke-width="1.5"/></svg>
+            </div>
+            <span class="font-semibold" data-company>YOUR STARTUP</span>
+          </div>
+          <p class="mt-3 text-slate-600 text-sm">Continuous, machine‑learned penetration testing. Replace this with your value proposition and compliance/legal links.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Company</h4>
+          <ul class="mt-2 text-sm text-slate-600 space-y-2">
+            <li><a href="#" class="hover:text-primary-600">About</a></li>
+            <li><a href="#" class="hover:text-primary-600">Careers</a></li>
+            <li><a href="#" class="hover:text-primary-600">Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Get in touch</h4>
+          <ul class="mt-2 text-sm text-slate-600 space-y-2">
+            <li>Email: <a href="mailto:hello@example.com" class="hover:text-primary-600">hello@example.com</a></li>
+            <li>Book a demo above</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-xs text-slate-500">© <span id="year"></span> <span data-company>YOUR STARTUP</span>. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Minimal JS for interactions -->
+  <script>
+    // Replace branding placeholders in one place.
+    const STARTUP_NAME = 'Your Startup'; // ← change this once
+    document.title = `${STARTUP_NAME} — Continuous ML Penetration Testing`;
+    document.querySelectorAll('#brandName, [data-company]').forEach(el => el.textContent = STARTUP_NAME);
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple fade-ins on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+    // Demo form handler (no backend). Replace with your endpoint.
+    const form = document.getElementById('demoForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msg.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => { msg.classList.add('hidden'); }, 5000);
+    });
+  </script>
+</body>
+</html>
